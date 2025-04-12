@@ -24,6 +24,9 @@ Step 10: Monitor the cluster deployment using PowerShell in the monitoring folde
 Step 11: Windows Admin Center (optional)
 #>
 
+
+# Note:  Make sure that the ISO has been dismounted before continuing.
+
 #Region Deploy Dell APEX PowerShell Module
 Invoke-WebRequest -Uri https://github.com/dell/powershell-acp-azure/archive/refs/tags/1.1.0.zip -OutFile $env:UserProfile\Downloads\ACPPosh.zip
 #expand and import
