@@ -76,10 +76,10 @@ Get-AutoDiscoveryHosts -Server $PrimaryNodeIP
 
 #Primary Node (Node01)
 #make sure you make this node primary if it's a secondary
-bash /usr/share/mcp-bootstrap-utility/scripts/bootstrap/custom_node.sh -s primary -i 192.168.203.11 -m 255.255.255.0 -g 192.168.203.1
+bash /usr/share/mcp-bootstrap-utility/scripts/bootstrap/custom_node.sh -s primary -i 10.125.6.11 -m 255.255.255.0 -g 10.125.6.1
 
 #Secondary node (Node02)
-bash /usr/share/mcp-bootstrap-utility/scripts/bootstrap/custom_node.sh -s secondary -i 192.168.203.12 -m 255.255.255.0 -g 192.168.203.1
+bash /usr/share/mcp-bootstrap-utility/scripts/bootstrap/custom_node.sh -s secondary -i 10.125.6.12 -m 255.255.255.0 -g 10.125.6.1
 #Endregion Configure Static IPs
 
 #Region Azure Pre-requisites
